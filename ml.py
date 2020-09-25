@@ -14,7 +14,7 @@ data = {
                             'loudness': "-16.077",   
                             'valence': "0.718",   
                             'acousticness': "0.000652",   
-                            'Mood': "Angry",   
+                            'Mood': "Sad",   
                     }
                 ],
         },
@@ -34,8 +34,9 @@ try:
     response = urllib.request.urlopen(req)
 
     result = response.read()
+    res_dict = json.loads(result.decode('utf-8')) 
+    print (res_dict["Results"]["output1"][0]["Scored Labels"])
     
-    print(result)
 except urllib.error.HTTPError as error:
     print("The request failed with status code: " + str(error.code))
 
