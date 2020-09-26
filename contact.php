@@ -1,6 +1,3 @@
-<?php 
-include 'dbConnection.php';
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -60,7 +57,7 @@ include 'dbConnection.php';
                                 <ul>
                                     <li><a href="index.php">Home</a></li>
                                     <li><a href="about-us.php">About us</a></li>
-                                    <li><a href="#">Mood</a>
+                                    <li><a href="#" class="mood">Mood</a>
                                         <ul class="dropdown">
                                             <li><a href="sad.php">Sad</a></li>
                                             <li><a href="angry.php">Angry</a></li>
@@ -89,131 +86,125 @@ include 'dbConnection.php';
     <!-- ##### Header Area End ##### -->
 
     <!-- ##### Breadcumb Area Start ##### -->
-    <div class="breadcumb-area bg-img bg-overlay2" style="background-image: url(img/bg-img/breadcumb2.jpg);">
+    <div class="breadcumb-area bg-img bg-overlay2" style="background-image: url(img/bg-img/breadcumb4.jpg);">
         <div class="bradcumbContent">
-            <h2>Happy songs</h2>
+            <h2>Contact</h2>
         </div>
     </div>
     <!-- bg gradients -->
     <div class="bg-gradients"></div>
     <!-- ##### Breadcumb Area End ##### -->
-    
-    <!-- ##### Upcoming Shows Area Start ##### -->
-    <div class="upcoming-shows-area section-padding-100">
+
+    <!-- ##### Contact Area Start ##### -->
+    <section class="contact-area mt-30 section-padding-100-0">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-heading">
-                        <h2>Happy songs playlist</h2>
-                        <h6>True happiness is enjoying your own company and living in peace and harmony with your body, mind and soul.</h6>
-                    </div>
-                </div>
-            </div>
 
             <div class="row">
-                <div class="col-12">
-                    <!-- Upcoming Shows Content -->
-                    <div class="upcoming-shows-content">
 
-                        <!-- Single Upcoming Shows -->
-                        <?php 
-                            $id = 1;
-                            include 'cards.php';
-                        ?>
+                <div class="col-12 col-lg-6">
+                    <div class="contact-content mb-100">
+                        <a href="#"><img src="img/core-img/logo3.png" alt=""></a>
+                        <p class="mb-30">Sed dapibus varius massa vel auctor. Nulla massa dui, posuere non erat in, eleifend mattis dui. Vivamus luctus luctus rhoncus. Donec sagittis nulla id finibus iaculis. Mauris odio tortor, suscipit non elit ut, imperdiet ornare erat.</p>
 
-                        <?php 
-                            $id = 2;
-                            include 'cards.php';
-                        ?>
-
-                        <?php 
-                            $id = 3;
-                            include 'cards.php';
-                        ?>
-
-                        <!-- Single Upcoming Shows -->
-                        <div class="single-upcoming-shows d-flex align-items-center flex-wrap">
-                            <div class="shows-date">
-                                <h2>23 <span>July</span></h2>
-                            </div>  
-                            <div class="shows-desc d-flex align-items-center">
-                                <div class="shows-img">
-                                    <img src="img/bg-img/s2.jpg" alt="">
-                                </div>
-                                <div class="shows-name">
-                                    <h6>Electric Festival</h6>
-                                    <p>Manhathan, NY, USA</p>
-                                </div>
+                        <!-- Single Contact Info -->
+                        <div class="single-contact-info d-flex align-items-center">
+                            <div class="icon">
+                                <img src="img/core-img/placeholder.png" alt="">
                             </div>
-                            <div class="shows-location">
-                                <p>Main Stadium</p>
-                            </div>
-                            <div class="shows-time">
-                                <p>21:30</p>
-                            </div>
-                            <div class="buy-tickets">
-                                <a href="#" class="btn musica-btn">Buy Tikets</a>
-                            </div>
+                            <h6>Vadodara, Gujarat</h6>
                         </div>
 
-                        <!-- Single Upcoming Shows -->
-                        <div class="single-upcoming-shows d-flex align-items-center flex-wrap">
-                            <div class="shows-date">
-                                <h2>25 <span>July</span></h2>
+                        <!-- Single Contact Info -->
+                        <div class="single-contact-info d-flex align-items-center">
+                            <div class="icon">
+                                <img src="img/core-img/message.png" alt="">
                             </div>
-                            <div class="shows-desc d-flex align-items-center">
-                                <div class="shows-img">
-                                    <img src="img/bg-img/s3.jpg" alt="">
-                                </div>
-                                <div class="shows-name">
-                                    <h6>Sunflower festival</h6>
-                                    <p>Paris, France</p>
-                                </div>
-                            </div>
-                            <div class="shows-location">
-                                <p>Sunflower Arena</p>
-                            </div>
-                            <div class="shows-time">
-                                <p>20:30</p>
-                            </div>
-                            <div class="buy-tickets">
-                                <a href="#" class="btn musica-btn">Buy Tikets</a>
-                            </div>
+                            <h6>+919099497061</h6>
                         </div>
 
-                        <!-- Single Upcoming Shows -->
-                        <div class="single-upcoming-shows d-flex align-items-center flex-wrap">
-                            <div class="shows-date">
-                                <h2>30 <span>July</span></h2>
+                        <!-- Single Contact Info -->
+                        <div class="single-contact-info d-flex align-items-center">
+                            <div class="icon">
+                                <img src="img/core-img/smartphone.png" alt="">
                             </div>
-                            <div class="shows-desc d-flex align-items-center">
-                                <div class="shows-img">
-                                    <img src="img/bg-img/s4.jpg" alt="">
-                                </div>
-                                <div class="shows-name">
-                                    <h6>Electric castle Festival</h6>
-                                    <p>Cluj, Romania</p>
-                                </div>
-                            </div>
-                            <div class="shows-location">
-                                <p>At the Castle</p>
-                            </div>
-                            <div class="shows-time">
-                                <p>20:30</p>
-                            </div>
-                            <div class="buy-tickets">
-                                <a href="#" class="btn musica-btn">Buy Tikets</a>
-                            </div>
+                            <h6>developers@code-busters.tech</h6>
                         </div>
-
                     </div>
                 </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="contact-content mb-100">
+                        <!-- Contact Form Area -->
+                        <div class="contact-form-area">
+                            <form id="form" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name" name="entry.1257264137">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email" placeholder="Your E-mail" name="entry.93395363">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject" name="entry.2034718139">
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Message" name="entry.190369245"></textarea>
+                                </div>
+                                <button class="btn musica-btn mt-30" type="submit" id="send">send</button>
+                            </form>
+                            <h3 id="success-msg" style="text-align: center !important; margin-top:190px !important; display:none; color:#000000"> Your Request has been posted </h3>
+                                <script>
+function postToGoogle() {
+                var field1 = $("#name").val();
+                var field2 = $("#email").val();
+                var field3 = $("#subject").val();
+                var field4 = $("#message").val();
+                
+                if(field1 == ""){
+                    alert('Please Fill Your Name');
+                    document.getElementById("name").focus();
+                    return false;
+                }
+                if(field2 == ""){
+                    alert('Please Fill Your Email');
+                    document.getElementById("email").focus();
+                    return false;
+                }
+                if(field3 == "" || field3.length > 50 || field3.length < 5){
+                    alert('Please Fill Subject');
+                    document.getElementById("subject").focus();
+                    return false;
+                }
+
+
+                
+    
+                $.ajax({
+                    url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSd0pELfHz74UY35tOMteY2WLVz6ePJUj1ATqik2MEq0OcMd_A/formResponse?",
+                    data: {"entry.1257264137": field1, "entry.93395363": field2, "entry.2034718139": field3, "entry.190369245": field4},
+                    type: "POST",
+                    dataType: "xml",
+                    success: function(d)
+                    {
+                    },
+                    error: function(x, y, z)
+                        {
+
+                            $('#success-msg').show();
+                            $('#form').hide();
+                            
+                        }
+                });
+                return false;
+            }
+</script>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-    </div>
-    <!-- ##### Upcoming Shows Area End ##### -->
-
-    
+    </section>
+    <!-- ##### Contact Area End ##### -->
 
     <!-- ##### CTA Area Start ##### -->
     <div class="musica-cta-area section-padding-100 bg-img bg-overlay2" style="background-image: url(img/blog-img/4.jpg);">
@@ -224,10 +215,9 @@ include 'dbConnection.php';
                         <div class="cta-text">
                             <h4>Contact us now</h4>
                             <h2>Do you have a question?</h2>
-                            
                         </div>
                         <div class="cta-btn">
-                            <a href="contact.php" class="btn musica-btn">Contact Us</a>
+                            <a href="#" class="btn musica-btn">contact us</a>
                         </div>
                     </div>
                 </div>
@@ -237,7 +227,7 @@ include 'dbConnection.php';
     <!-- ##### CTA Area End ##### -->
 
     <!-- ##### Footer Area Start ##### -->
-<footer class="footer-area section-padding-100-0">
+    <footer class="footer-area section-padding-100-0">
         <div class="container-fluid">
             <div class="row">
 
@@ -287,7 +277,7 @@ include 'dbConnection.php';
             </div>
         </div>
     </footer>
-    <!-- ##### Footer Area Start ##### -->
+    <!-- ##### Footer Area Stop ##### -->
 
     <!-- ##### All Javascript Script ##### -->
     <!-- jQuery-2.2.4 js -->

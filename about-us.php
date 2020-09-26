@@ -66,9 +66,12 @@
                                         </ul>
                                     </li>
                                     <li><a href="contact.php">Contact</a></li>
-                                    <li><a href="login.php">Login|signup</a></li>
+                                    
                                 </ul>
-
+                                <ul>
+                                    <li style="padding-bottom:72px; padding-left: 80px;"><?php include 'accountinfo.php';?>
+                                </li>
+                            </ul>
                                 <!-- Social Button -->
                                 
 

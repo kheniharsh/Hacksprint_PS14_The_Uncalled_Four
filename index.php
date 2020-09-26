@@ -92,7 +92,7 @@
         <div class="bg-gradients"></div>
         <!-- Slide Down -->
         <div class="slide-down" id="scrollDown">
-            <a href="#moods"><h6>Slide Down</h6>
+            <h6>Slide Down</h6>
             <div class="line"></div>
         </div>
     </section>
@@ -102,7 +102,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-heading">
-                        <h2 id="moods">Moods</h2>
+                        <h2>Moods</h2>
                     </div>
                 </div>
             </div>

@@ -1,66 +1,53 @@
-<?php 
-include 'dbConnection.php';
-?>
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
-    <!-- Title -->
-    <title>Music System</title>
-
-    <!-- Favicon -->
-    <link rel="icon" href="img/core-img/favicon.ico">
-
-    <!-- Core Stylesheet -->
-    <link rel="stylesheet" href="style.css">
-
-</head>
-
-<body>
-    <!-- ##### Preloader ##### -->
-    <div class="preloader d-flex align-items-center justify-content-center">
-        <div class="circle-preloader">
-            <img src="img/core-img/compact-disc.png" alt="">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <!-- Title -->
+        <title>Music System</title>
+        <!-- Favicon -->
+        <link rel="icon" href="img/core-img/favicon.ico">
+        <!-- Core Stylesheet -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- ##### Preloader ##### -->
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="circle-preloader">
+                <img src="img/core-img/compact-disc.png" alt="">
+            </div>
         </div>
-    </div>
+        <!-- ##### Header Area Start ##### -->
 
-    <!-- ##### Header Area Start ##### -->
-    <header class="header-area">
-        <!-- Navbar Area -->
-        <div class="musica-main-menu">
-            <div class="classy-nav-container breakpoint-off">
-                <div class="container-fluid">
-                    <!-- Menu -->
-                    <nav class="classy-navbar justify-content-between" id="musicaNav">
+        <header class="header-area">
+            <!-- Navbar Area -->
 
-                        <!-- Nav brand -->
-                        <a href="index.php" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
-
-                        <!-- Navbar Toggler -->
-                        <div class="classy-navbar-toggler">
-                            <span class="navbarToggler"><span></span><span></span><span></span></span>
-                        </div>
-
+            <div class="musica-main-menu">
+                <div class="classy-nav-container breakpoint-off">
+                    <div class="container-fluid">
                         <!-- Menu -->
-                        <div class="classy-menu">
-
-                            <!-- close btn -->
-                            <div class="classycloseIcon">
-                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        <nav class="classy-navbar justify-content-between" id="musicaNav">
+                            <!-- Nav brand -->
+                            <a href="index.php" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+                            <!-- Navbar Toggler -->
+                            <div class="classy-navbar-toggler">
+                                <span class="navbarToggler"><span></span><span></span><span></span></span>
                             </div>
-
-                            <!-- Nav Start -->
-                            <div class="classynav">
-                                <ul>
-                                    <li><a href="index.php">Home</a></li>
-                                    <li><a href="about-us.php">About us</a></li>
-                                    <li><a href="#">Mood</a>
+                            <!-- Menu -->
+                            <div class="classy-menu">
+                                <!-- close btn -->
+                                <div class="classycloseIcon">
+                                    <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                                </div>
+                                <!-- Nav Start -->
+                                <div class="classynav">
+                                    <ul style="top: -70px;">
+                                        <li><a href="index.php">Home</a></li>
+                                        <li><a href="about-us.php">About us</a></li>
+                                        <li><a href="#" class="mood">Mood</a>
                                         <ul class="dropdown">
                                             <li><a href="sad.php">Sad</a></li>
                                             <li><a href="angry.php">Angry</a></li>
@@ -69,15 +56,15 @@ include 'dbConnection.php';
                                         </ul>
                                     </li>
                                     <li><a href="contact.php">Contact</a></li>
+
+                                    <li></li>
                                     
-                                </ul>
-                                <ul>
+                                    </ul>
+                                    <ul>
                                     <li style="padding-bottom:72px; padding-left: 80px;"><?php include 'accountinfo.php';?></li>
                                     </ul>
-
                                 <!-- Social Button -->
                                 
-
                             </div>
                             <!-- Nav End -->
                         </div>
@@ -87,55 +74,131 @@ include 'dbConnection.php';
         </div>
     </header>
     <!-- ##### Header Area End ##### -->
-
-    <!-- ##### Breadcumb Area Start ##### -->
-    <div class="breadcumb-area bg-img bg-overlay2" style="background-image: url(img/bg-img/breadcumb2.jpg);">
-        <div class="bradcumbContent">
-            <h2>Happy songs</h2>
+    <!-- ##### Hero Area Start ##### -->
+    <section class="hero-area">
+        <div class="hero-slides owl-carousel">
+            <!-- Single Hero Slide -->
+            <div class="single-hero-slide d-flex align-items-center justify-content-center">
+                <!-- Slide Img -->
+                <div class="slide-img bg-img" style="background-image: url(img/bg-img/bg-1.jpg);"></div>
+            </div>
+            <!-- Single Hero Slide -->
+            <div class="single-hero-slide d-flex align-items-center justify-content-center">
+                <!-- Slide Img -->
+                <div class="slide-img bg-img" style="background-image: url(img/bg-img/bg-2.jpg);"></div>
+                
+            </div>
+            <!-- Single Hero Slide -->
+            <div class="single-hero-slide d-flex align-items-center justify-content-center">
+                <!-- Slide Img -->
+                <div class="slide-img bg-img" style="background-image: url(img/bg-img/bg-3.jpg);"></div>
+                
+            </div>
         </div>
+        <!-- bg gradients -->
+        <div class="bg-gradients"></div>
+        <!-- Slide Down -->
+        <div class="slide-down" id="scrollDown">
+            <h6>Slide Down</h6>
+            <div class="line"></div>
+        </div>
+    </section>
+    <!-- ##### Hero Area End ##### -->
+    <div class="upcoming-shows-area section-padding-100">
+      
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading">
+                        <h2>Moods</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="cards-list">
+                <div class="card 1">
+                    <div class="card_image"> <img src="https://media.giphy.com/media/9Y6n9TR7U07ew/giphy.gif" />
+                    </div>
+                    <a href="happy.php">
+                        <div class="middle">
+                            <div class="text">Happy</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card 2">
+                    <div class="card_image">
+                        <img src="https://media.giphy.com/media/dJYoOVAWf2QkU/giphy.gif" />
+                    </div>
+                    <a href="sad.php">
+                        <div class="middle">
+                            <div class="text">Sad</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card 3">
+                    <div class="card_image">
+                        <img src="https://media.giphy.com/media/90FH7I3McAQ7u/giphy.gif" />
+                    </div>
+                    <a href="angry.php">
+                        <div class="middle">
+                            <div class="text">Angry</div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="card 4">
+                    <div class="card_image">
+                        <img src="https://media.giphy.com/media/piO6cmvxIK0A05MNkY/giphy.gif" />
+                    </div>
+                    <a href="relax.php">
+                        <div class="middle">
+                            <div class="text">Relax</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
     </div>
-    <!-- bg gradients -->
-    <div class="bg-gradients"></div>
-    <!-- ##### Breadcumb Area End ##### -->
-    
     <!-- ##### Upcoming Shows Area Start ##### -->
     <div class="upcoming-shows-area section-padding-100">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="section-heading">
-                        <h2>Happy songs playlist</h2>
-                        <h6>True happiness is enjoying your own company and living in peace and harmony with your body, mind and soul.</h6>
+                        <h2>Music</h2>
                     </div>
                 </div>
             </div>
-
             <div class="row">
                 <div class="col-12">
                     <!-- Upcoming Shows Content -->
                     <div class="upcoming-shows-content">
-
                         <!-- Single Upcoming Shows -->
-                        <?php 
-                            $id = 1;
-                            include 'cards.php';
-                        ?>
-
-                        <?php 
-                            $id = 2;
-                            include 'cards.php';
-                        ?>
-
-                        <?php 
-                            $id = 3;
-                            include 'cards.php';
-                        ?>
-
+                        <div class="single-upcoming-shows d-flex align-items-center flex-wrap">
+                            <div class="shows-date">
+                                <h2>17 <span>July</span></h2>
+                            </div>
+                            <div class="shows-desc d-flex align-items-center">
+                                <div class="shows-img">
+                                    <img src="img/bg-img/s1.jpg" alt="">
+                                </div>
+                                <div class="shows-name">
+                                    <h6>Electric castle Festival</h6>
+                                    <p>Cluj, Romania</p>
+                                </div>
+                            </div>
+                            <div class="shows-location">
+                                <p>At the Castle</p>
+                            </div>
+                            <div class="shows-time">
+                                <p>20:30</p>
+                            </div>
+                            <div class="buy-tickets">
+                                <a href="#" class="btn musica-btn">Buy Tikets</a>
+                            </div>
+                        </div>
                         <!-- Single Upcoming Shows -->
                         <div class="single-upcoming-shows d-flex align-items-center flex-wrap">
                             <div class="shows-date">
                                 <h2>23 <span>July</span></h2>
-                            </div>  
+                            </div>
                             <div class="shows-desc d-flex align-items-center">
                                 <div class="shows-img">
                                     <img src="img/bg-img/s2.jpg" alt="">
@@ -155,7 +218,6 @@ include 'dbConnection.php';
                                 <a href="#" class="btn musica-btn">Buy Tikets</a>
                             </div>
                         </div>
-
                         <!-- Single Upcoming Shows -->
                         <div class="single-upcoming-shows d-flex align-items-center flex-wrap">
                             <div class="shows-date">
@@ -180,7 +242,6 @@ include 'dbConnection.php';
                                 <a href="#" class="btn musica-btn">Buy Tikets</a>
                             </div>
                         </div>
-
                         <!-- Single Upcoming Shows -->
                         <div class="single-upcoming-shows d-flex align-items-center flex-wrap">
                             <div class="shows-date">
@@ -205,42 +266,19 @@ include 'dbConnection.php';
                                 <a href="#" class="btn musica-btn">Buy Tikets</a>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- ##### Upcoming Shows Area End ##### -->
-
     
-
-    <!-- ##### CTA Area Start ##### -->
-    <div class="musica-cta-area section-padding-100 bg-img bg-overlay2" style="background-image: url(img/blog-img/4.jpg);">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="cta-content d-flex justify-content-between align-items-center">
-                        <div class="cta-text">
-                            <h4>Contact us now</h4>
-                            <h2>Do you have a question?</h2>
-                            
-                        </div>
-                        <div class="cta-btn">
-                            <a href="contact.php" class="btn musica-btn">Contact Us</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ##### CTA Area End ##### -->
-
+    
+    
     <!-- ##### Footer Area Start ##### -->
-<footer class="footer-area section-padding-100-0">
+    <footer class="footer-area section-padding-100-0">
         <div class="container-fluid">
             <div class="row">
-
                 <!-- Footer Widget Area -->
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="footer-widget-area mb-100" style="padding-top: 40%;">
@@ -248,7 +286,6 @@ include 'dbConnection.php';
                         
                     </div>
                 </div>
-
                 <!-- Footer Widget Area -->
                 <div class="col-12 col-sm-4 col-xl-2" style="padding-left: 50%;">
                     <div class="footer-widget-area mb-100">
@@ -264,7 +301,6 @@ include 'dbConnection.php';
                         </nav>
                     </div>
                 </div>
-
                 
                 <!-- Footer Widget Area -->
                 <div class="col-12 col-sm-4 col-xl-2" style="padding-left: 10%;">
@@ -281,14 +317,11 @@ include 'dbConnection.php';
                         </nav>
                     </div>
                 </div>
-
                 
-
             </div>
         </div>
     </footer>
     <!-- ##### Footer Area Start ##### -->
-
     <!-- ##### All Javascript Script ##### -->
     <!-- jQuery-2.2.4 js -->
     <script src="js/jquery/jquery-2.2.4.min.js"></script>
@@ -301,5 +334,4 @@ include 'dbConnection.php';
     <!-- Active js -->
     <script src="js/active.js"></script>
 </body>
-
 </html>
