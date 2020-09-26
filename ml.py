@@ -1,20 +1,51 @@
 import urllib.request
 import json
+import mysql.connector
+
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="root",
+  password="",
+  database="mymusic"
+)
+mycursor = mydb.cursor()
+id= mycursor.execute("SELECT id FROM data")
+row = mycursor.fetchone()
+name= mycursor.execute("SELECT name FROM data")
+row1 = mycursor.fetchone()
+title= mycursor.execute("SELECT title FROM data")
+row2 = mycursor.fetchone()
+tempo= mycursor.execute("SELECT tempo FROM data")
+row3 = mycursor.fetchone()
+energy= mycursor.execute("SELECT energy FROM data")
+row4 = mycursor.fetchone()
+danceability= mycursor.execute("SELECT danceability FROM data")
+row5 = mycursor.fetchone()
+loudness= mycursor.execute("SELECT loudness FROM data")
+row6 = mycursor.fetchone()
+valence= mycursor.execute("SELECT valance FROM data")
+row7 = mycursor.fetchone()
+acousticness= mycursor.execute("SELECT acousticness FROM data")
+row8 = mycursor.fetchone()
+mood= mycursor.execute("SELECT mood FROM data")
+row9 = mycursor.fetchone()
+
+
 
 data = {
         "Inputs": {
                 "input1":
                 [
                     {
-                            'a_name': "PJ Harvey",   
-                            'title': "50 Ft Queenie",   
-                            'tempo': "126.366",   
-                            'energy': "0.667",   
-                            'danceability': "0.382",   
-                            'loudness': "-16.077",   
-                            'valence': "0.718",   
-                            'acousticness': "0.000652",   
-                            'Mood': "Sad",   
+                            'a_name': row1,   
+                            'title': row2,   
+                            'tempo': row3,   
+                            'energy': row4,   
+                            'danceability': row5,   
+                            'loudness': row6,   
+                            'valence': row7,   
+                            'acousticness': row8,   
+                            'Mood': row9,   
                     }
                 ],
         },
@@ -34,8 +65,11 @@ try:
     response = urllib.request.urlopen(req)
 
     result = response.read()
-    res_dict = json.loads(result.decode('utf-8')) 
-    print (res_dict["Results"]["output1"][0]["Scored Labels"])
+    res_dict = json.loads(result.decode('utf-8'))
+    x = res_dict["Results"]["output1"][0]["Scored Labels"]
+    print (x)
+    sql = "UPDATE data SET fmood = x WHERE name = 'row'"
+    mycursor.execute(sql)
     
 except urllib.error.HTTPError as error:
     print("The request failed with status code: " + str(error.code))
